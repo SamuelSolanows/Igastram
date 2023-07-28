@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
+                finish()
                 startActivity(Intent(this@MainActivity, Inicio::class.java))
             }
         }.start()
