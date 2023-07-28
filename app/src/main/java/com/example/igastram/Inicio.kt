@@ -12,11 +12,7 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityInicioBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.apply {
-            button.setOnClickListener {
-                LlamarFragmento(savedInstanceState)
-            }
-        }
+        LlamarFragmento(savedInstanceState)
 
     }
 
