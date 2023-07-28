@@ -12,15 +12,15 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityInicioBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        LlamarFragmento(savedInstanceState)
+        FragmentoHome(savedInstanceState)
 
     }
 
-    private fun LlamarFragmento(savedInstanceState: Bundle?) {
+    private fun FragmentoHome(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<Notificaciones>(R.id.fragmentContainerView2)
+                add<Home>(R.id.fragmentContainerView2)
             }
         }
     }
