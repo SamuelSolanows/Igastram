@@ -13,14 +13,32 @@ class Inicio : AppCompatActivity() {
         binding = ActivityInicioBinding.inflate(layoutInflater)
         setContentView(binding.root)
         FragmentoHome(savedInstanceState)
+        binding.apply {
+            Search.setOnClickListener {
+                FragmentoSearch(savedInstanceState)
+            }
+            Home.setOnClickListener {
+                FragmentoHome(savedInstanceState)
+            }
+        }
 
     }
+
 
     private fun FragmentoHome(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 add<Home>(R.id.fragmentContainerView2)
+            }
+        }
+    }
+
+    private fun FragmentoSearch(savedInstanceState: Bundle?) {
+        if (savedInstanceState == null) {
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
+                add<Search>(R.id.fragmentContainerView2)
             }
         }
     }
