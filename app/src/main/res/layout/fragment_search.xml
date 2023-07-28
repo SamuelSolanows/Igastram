@@ -6,10 +6,15 @@
     tools:context=".Search">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#2196F3"
-        android:text="@string/hello_blank_fragment" />
+
+    <SearchView
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#DCDCDC"
+        android:queryHint="Buscar">
+
+    </SearchView>
 
 </FrameLayout>

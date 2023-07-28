@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.igastram.databinding.ActivityInicioBinding
 
 class Inicio : AppCompatActivity() {
@@ -29,7 +30,7 @@ class Inicio : AppCompatActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<Home>(R.id.fragmentContainerView2)
+                replace<Home>(R.id.fragmentContainerView2)
             }
         }
     }
@@ -38,7 +39,7 @@ class Inicio : AppCompatActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<Search>(R.id.fragmentContainerView2)
+                replace<Search>(R.id.fragmentContainerView2)
             }
         }
     }

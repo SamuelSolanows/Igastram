@@ -19,7 +19,7 @@
             app:srcCompat="@drawable/letras" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/likes"
             android:layout_width="38dp"
             android:layout_height="29dp"
             app:srcCompat="@drawable/corazon"
@@ -27,7 +27,7 @@
             android:layout_marginTop="2dp"/>
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/messenger"
             android:layout_width="38dp"
             android:layout_height="29dp"
             app:srcCompat="@drawable/mensajero"
