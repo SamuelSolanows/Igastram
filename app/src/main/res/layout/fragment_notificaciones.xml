@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Notificaciones">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="151dp"
+            android:layout_height="37dp"
+            app:srcCompat="@drawable/letras" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="38dp"
+            android:layout_height="29dp"
+            app:srcCompat="@drawable/corazon"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="2dp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="38dp"
+            android:layout_height="29dp"
+            app:srcCompat="@drawable/mensajero"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
